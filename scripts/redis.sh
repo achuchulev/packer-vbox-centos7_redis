@@ -1,7 +1,19 @@
 #!/bin/bash
 
 # Script that install Redis
-wget http://download.redis.io/releases/redis-4.0.11.tar.gz
-tar xzf redis-4.0.11.tar.gz
-cd redis-4.0.11
-make
+
+# Add the EPEL repository, and update YUM to confirm your change
+yum install -y epel-release
+yum update
+
+# Install Redis
+yum install -y redis
+
+# Start Redis
+systemctl start redis
+
+# Enable automatically start Redis on boot
+systemctl enable redis
+
+# Verify the Installation
+redis-cli ping
