@@ -6,10 +6,7 @@ provisioner:
   name: shell
 
 platforms:
-  - name: vbox/redis64
-    driver:
-      box: redis-box
-      provider: virtualbox
+  - name: redis-box
 
 verifier:
   name: inspec
