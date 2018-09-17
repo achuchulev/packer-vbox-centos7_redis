@@ -40,3 +40,27 @@ After a few minutes, Packer should tell you the box was generated successfully a
 * Start vagrant box: `vagrant up`
 
 * connect to redis-box: `vagrant ssh`
+
+## Test box for redis package is installed
+
+### Requirements
+The following software must be installed/present on your local machine before you can perform the test
+
+* kitchen
+
+### Run test
+
+1. Run command `kitchen list` to check that kitchen instance is detected from kitchen.yml
+  1. Output should looks like:
+  > Instance           Driver   Provisioner  Verifier  Transport  Last Action    Last Error
+  > default-redis-box  Vagrant  Shell        Inspec    Ssh        <Not Created>  <None>
+
+2. Run command `kitchen create default-redis-box` to boot up instance
+3. Run command `kitchen verify default-redis-box` to check for presence of redis
+  3. Output of the successful test
+  >  System Package redis
+  >  ✔  should be installed
+
+  > Test Summary: 1 successful, 0 failures, 0 skipped
+  
+4. Run command `kitchen destroy default-redis-box` to destroy kitchen instance
