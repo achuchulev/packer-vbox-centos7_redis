@@ -1,7 +1,8 @@
-# Packer template to bake VirtualBox (vagrant) CentOS7-x86_64 box with Redis server
+## Packer template to bake VirtualBox (vagrant) CentOS7-x86_64 box with Redis server. A kitchen test is included to verify that redis is installed. 
 
 ### Purpose
 This repository stores a Packer template to build a Vagrant VirtualBox CentOS7-x86_64 box with Redis server
+A kitchen test is included to verify that redis is installed.
 
 ### Requirements
 The following software must be installed/present on your local machine before you can use Packer to build the Vagrant box file:
