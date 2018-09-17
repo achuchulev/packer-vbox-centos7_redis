@@ -52,6 +52,7 @@ The following software must be installed/present on your local machine before yo
 
 1. Run command `kitchen list` to check that kitchen instance is detected from kitchen.yml
   * Output should looks like:
+  
   > Instance           Driver   Provisioner  Verifier  Transport  Last Action    Last Error
   > default-redis-box  Vagrant  Shell        Inspec    Ssh        <Not Created>  <None>
 
