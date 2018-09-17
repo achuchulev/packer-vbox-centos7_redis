@@ -54,6 +54,7 @@ The following software must be installed/present on your local machine before yo
   * Output should looks like:
   
    `Instance           Driver   Provisioner  Verifier  Transport  Last Action    Last Error`
+   
    `default-redis-box  Vagrant  Shell        Inspec    Ssh        <Not Created>  <None>`
  
 2. Run command `kitchen create default-redis-box` to boot up instance
