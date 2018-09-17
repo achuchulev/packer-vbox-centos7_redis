@@ -51,13 +51,14 @@ The following software must be installed/present on your local machine before yo
 ### Run test
 
 1. Run command `kitchen list` to check that kitchen instance is detected from kitchen.yml
-  1. Output should looks like:
+  * Output should looks like:
   > Instance           Driver   Provisioner  Verifier  Transport  Last Action    Last Error
   > default-redis-box  Vagrant  Shell        Inspec    Ssh        <Not Created>  <None>
 
 2. Run command `kitchen create default-redis-box` to boot up instance
 3. Run command `kitchen verify default-redis-box` to check for presence of redis
-  3. Output of the successful test
+  * Output of the successful test:
+  
   >  System Package redis
   >  ✔  should be installed
 
