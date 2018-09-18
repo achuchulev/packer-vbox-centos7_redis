@@ -77,7 +77,7 @@
     "post-processors": [
         [
           {
-            "output": "builds/{{.Provider}}-centos7-minimal.box",
+            "output": "builds/{{.Provider}}-centos7-redis.box",
             "type": "vagrant"
           },
           {
